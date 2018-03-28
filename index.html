@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CS488 Final Project</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="thumbnail-gallery.css">
+
+</head>
+<body>
+
+<div class="container gallery-container">
+
+    <h1>Final Project Gallery</h1>
+
+    <p class="page-description text-center">Linas Beresna | Ray Tracer | 27.03.2018</p>
+
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/torus.gif">
+                        <img src="Images/torus.png" alt="Torus">
+                    </a>
+                    <div class="caption">
+                        <h3>Torus Primitive</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/cylinder.gif">
+                        <img src="Images/cylinder.png" alt="cylinder">
+                    </a>
+                    <div class="caption">
+                        <h3>Cylinder Primitive</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/cone.gif">
+                        <img src="Images/cone.png" alt="cone">
+                    </a>
+                    <div class="caption">
+                        <h3>Cone Primitive</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/reflection.png">
+                        <img src="Images/reflection.png" alt="reflection">
+                    </a>
+                    <div class="caption">
+                        <h3>Reflection</h3>
+                        <p>Reflection implmented. The amount of light reflected can be controlled, here 100% is being reflected.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/glossy_reflection.png">
+                        <img src="Images/glossy_reflection.png" alt="glossy_reflection">
+                    </a>
+                    <div class="caption">
+                        <h3>Glossy Reflection</h3>
+                        <p>Glossy reflection added, image used a coefficient of 500. Use with <code>set_glossy({x,y})</code> where x is the glossy reflection exponent.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/soft_shadows.png">
+                        <img src="Images/soft_shadows.png" alt="soft_shadows">
+                    </a>
+                    <div class="caption">
+                        <h3>Soft Shadows</h3>
+                        <p>Added spherical lights and then shot shadow rays to random points on that light and divided by the total number of rays shot.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/refraction.png">
+                        <img src="Images/refraction.png" alt="refrac">
+                    </a>
+                    <div class="caption">
+                        <h3>Refraction</h3>
+                        <p>Refraction added. When creating the material the refraction index is also put in, a refraction index of 0 means that refraction is turned off.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/glossy_refraction.png">
+                        <img src="Images/glossy_refraction.png" alt="glossy_refrac">
+                    </a>
+                    <div class="caption">
+                        <h3>Glossy Transmission</h3>
+                        <p>Glossy transmission added. Use with <code>set_glossy({x,y})</code> where y is the glossy transmission exponent.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/texture.gif">
+                        <img src="Images/texture.png" alt="glossy_refrac">
+                    </a>
+                    <div class="caption">
+                        <h3>Texture Mapping</h3>
+                        <p>Implmented texture mapping so that one can add images to shapes. Use with <code>set_picture(...)</code> where the file path is placed in between the parentheses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/depth1.png">
+                        <img src="Images/depth1.png" alt="depth1">
+                    </a>
+                    <div class="caption">
+                        <h3>Depth of Field</h3>
+                        <p>Implemented depth of field using... . Focal distance of 8 and aperature of 0.4.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/depth2.png">
+                        <img src="Images/depth2.png" alt="depth2">
+                    </a>
+                    <div class="caption">
+                        <h3>Depth of Field</h3>
+                        <p>Now the focal distance is set to 13 so that the middle balls are now visible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/depth3.png">
+                        <img src="Images/depth3.png" alt="depth3">
+                    </a>
+                    <div class="caption">
+                        <h3>Depth of Field</h3>
+                        <p>This is with the same distance of 13, but with the aperature set to 0.8, which causes the balls not in vision to be more blurry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/batman.png">
+                        <img src="Images/batman.png" alt="batman">
+                    </a>
+                    <div class="caption">
+                        <h3>Colour Scheme</h3>
+                        <p>Shoutout to the colour scheme I have been using: <a href="https://github.com/whatyouhide/vim-gotham"> Gotham</a> by whatyouhide.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/sad.jpg">
+                        <img src="Images/sad.jpg" alt="Acceleration">
+                    </a>
+                    <div class="caption">
+                        <h3>Acceleration (Grid)</h3>
+                        <p>Abandoned due to lack of time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/flags.png">
+                        <img src="Images/flags.png" alt="Flags">
+                    </a>
+                    <div class="caption">
+                        <h3>More Texture Mapping</h3>
+                        <p>Texture mapping on a cone, flags are from Lithuania and the UK.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/final_scene.png">
+                        <img src="Images/final_scene.png" alt="Final Scene">
+                    </a>
+                    <div class="caption">
+                        <h3>Final Scene</h3>
+                        <p>Final scene of an office. Here one can see glossy transmission in the cup, glossy reflection in the computer screen and reflection in the mirror.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="Images/room-depth.png">
+                        <img src="Images/room-depth.png" alt="Final Scene">
+                    </a>
+                    <div class="caption">
+                        <h3>Final Scene Depth</h3>
+                        <p>Same scene but with depth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
